@@ -1,0 +1,147 @@
+h1{
+    font-size: 30px;
+    text-align: center;
+
+}
+h2{
+    font-size: 30px;
+    position: absolute;
+    top: 270px;
+    left: 150px;
+    text-align: left;
+}
+body {
+    font-family: copperplate;
+    background: #f58f47;
+    color: black;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    text-align: left;
+}
+
+.container{
+    position: absolute;
+    top: 130px;
+    right: 150px;
+    width: 500px;
+    height: 500px;
+    background-color: #fa9d5a
+    
+}
+
+.text-section p{
+    font-size: 30px;
+    top: 20px;
+    left: 20px;
+}
+.form-row{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 110px;
+    margin-left: 15px;
+}
+.form-group{
+    width:48%;
+    text-align: left;
+
+}
+label{
+    font-size: 16px;
+    margin-bottom: none;
+    display: block;
+    color: black;
+}
+
+input{
+    width: 80%;
+    padding: 10px;
+    margin-top: 1px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    background-color: #f9dac4;
+}
+textarea{
+    width: 450px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    text-align: left;
+    background-color: #f9dac4;
+    
+}
+button{
+    background-color: #fa7719;
+    color: black;
+    border-style: ridge;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: copperplate;
+    border-color: #f78431;
+    margin-top: 10px;
+    margin-left: 340px;
+    
+
+}
+
+
+.menu-toggle {
+    background-color: #f78431;
+    padding: 10px;
+    height: 15px;
+    width: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grabbing;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: black;
+    font-size: 30px;
+    border-radius: 6px;
+    border-style: ridge;
+    border-color: #fa7719;
+    z-index: 900;
+
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 230px;
+    height: 100%;
+    background-color: #f58f47;
+    transition: left 0.3s ease-in-out;
+}
+.menu.active{
+    left:0;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+}
+.menu li {
+    padding: 15px;
+    border-bottom: 1px solid black;
+    cursor: cell;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  display: block;
+  cursor: cell;
+}
+
+.menu li:hover {
+  background-color: #f78431;
+}

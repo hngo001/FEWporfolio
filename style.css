@@ -1,0 +1,103 @@
+h1 {
+    font-size: 100px;
+    height: 0.5em;
+    
+}
+body {
+    font-family: copperplate;
+    background: #f58f47;
+    color: black;
+    text-align: left;
+    margin: 10px;
+    padding: 200px;
+    height: 100%;
+    overflow: hidden;
+}
+button {
+    background-color: #f78431;
+    color: black;
+    border-color: #fa7719;
+    border-style: ridge;
+    width: 120px;
+    height: 30px;
+    cursor: cell;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: copperplate;
+   
+}
+
+.menu-toggle {
+    background-color: #f78431;
+    padding: 10px;
+    height: 15px;
+    width: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grabbing;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: black;
+    font-size: 30px;
+    border-radius: 6px;
+    border-style: ridge;
+    border-color: #fa7719;
+    z-index: 900;
+    
+
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 230px;
+    height: 100%;
+    background-color: #f58f47;
+    transition: left 0.3s ease-in-out;
+}
+.menu.active{
+    left:0;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+}
+.menu li {
+    padding: 15px;
+    border-bottom: 1px solid black;
+    cursor: cell;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  display: block;
+  cursor: cell;
+}
+
+.menu li:hover {
+  background-color: #f78431;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.pic-of-me{
+    width: 60vw;
+    height: 300vh;
+    object-fit: cover;
+    float: inherit;
+    border-style: inset;
+    border-color: black;
+}
