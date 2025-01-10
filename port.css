@@ -1,0 +1,197 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+h2{
+    text-align: center;
+}
+
+body {
+    font-family: copperplate;
+    background: #f58f47;
+    color: black;
+    text-align: center;
+    padding: 0%;
+}
+
+.menu-toggle {
+    background-color: #f78431;
+    padding: 10px;
+    height: 15px;
+    width: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grabbing;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: black;
+    font-size: 30px;
+    border-radius: 6px;
+    border-style: ridge;
+    border-color: #fa7719;
+    z-index: 900;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    top: 0;
+    left: -250px;
+    width: 230px;
+    height: 100%;
+    background-color: #f58f47;
+    transition: left 0.3s ease-in-out;
+}
+.menu.active{
+    left:0;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+}
+.menu li {
+    padding: 15px;
+    border-bottom: 1px solid black;
+    cursor: cell;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  display: block;
+  cursor: cell;
+}
+
+.menu li:hover {
+  background-color: #f78431;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+    justify-content: space-between; 
+    padding: 50px;
+}
+
+.text-section {
+    flex: 1; 
+    padding: 20px;
+    text-align: left; 
+    text-decoration: none;
+    margin-top: 15px;
+}
+.text-section a{
+    cursor: cell;
+}
+.text-section p1, p2{
+    font-size: x-large;
+}
+
+
+.image-section {
+    flex: 1; 
+    padding: 30px;
+    display: inline; 
+    justify-content: flex-end; 
+    align-items: flex-start; 
+    position: relative;
+    padding: 30px;
+}
+
+.image-section img {
+    width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section1:hover, .section2:hover, .section3:hover, .section4:hover, .sectionA:hover {
+    background-color: #fa9d5a; 
+}
+.section1, .section2, .section3{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    text-align: center;
+}
+
+.section1 p3, .section2 p, .section3 p, .section3 p2, .section4 p{
+    font-size: small;
+    grid-column: 1/-1;
+    margin-top: -12px;
+    text-align: left;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    
+}
+.sectionA p {
+    font-size: small;
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.sectionA p4, .section4 p5{
+    font-weight: bold;
+    font-size: large;
+}
+.sectionA ul{
+    margin-left: 20px;
+
+    list-style-type: square;
+    text-align: left;
+   
+}
+.section3 ul{
+    margin-left: 20px;
+    list-style-type: square;
+    text-align: left;
+    grid-column: 1/ span 3;
+}
+.section3 h5, .section3 h6, .section4 h7{
+    font-size: large;
+    text-align: center;
+    display: block;
+
+}
+.sectionA h8{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.section4 {
+    display: block;
+    margin: 20px auto; 
+    text-align: center;
+}
+.section4 .images{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.section4 .images img{
+    width: 45%;
+    height: auto;
+}
+.section4 h7{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
